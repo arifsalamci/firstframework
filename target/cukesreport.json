@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Google search functionality",
+        "description": "",
+        "id": "google-search-functionality;google-search-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9048634000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on home page",
+            "match": {
+              "location": "SearchFunctionality.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1832338700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter his \"Galatasaray\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Galatasaray\"",
+                  "offset": 15
+                }
+              ],
+              "location": "SearchFunctionality.user_enter_his(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7855600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User verify that actualTitle with \"Galatasaray - Google Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Galatasaray - Google Search\"",
+                  "offset": 34
+                }
+              ],
+              "location": "SearchFunctionality.user_verify_that_actualTitle_with(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search Functionality",
+    "description": "",
+    "id": "google-search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/google/googleSearch.feature",
+    "tags": []
+  }
+]
